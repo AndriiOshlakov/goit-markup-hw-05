@@ -331,55 +331,7 @@
       </div>
     </section>
   </main>
-  <!--Overlay з Модальним вікном-->
-  <div class="modal-overlay">
-    <div class="modal">
-      <button type="button" class="close-modal-btn"><svg class="close-modal-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-Close"></use>
-        </svg></button>
-      <p class="modal-txt">Leave your contacts and we will call you back</p>
-      <form class="modal-form">
-        <div class="modal-field">
-          <label class="modal-form-label">Name</label>
-          <div class="input-box">
-            <input type="text" name="name" class="form-input" />
-            <svg class="input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-Person"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="modal-field">
-          <label class="modal-form-label">Phone</label>
-          <div class="input-box">
-            <input type="tel" name="tel" class="form-input" />
-            <svg class="input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-Phone"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="modal-field">
-          <label class="modal-form-label">Email</label>
-          <div class="input-box">
-            <input type="email" name="email" class="form-input" /><svg class="input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-Email"></use>
-            </svg>
-          </div>
-        </div>
-        <label class="modal-form-label">Comment
-          <textarea name="Comment" rows="8" class="comment" placeholder="Text input"></textarea>
-        </label>
-        <div class="modal-field-checkbox">
-          <input type="checkbox" class="checkbox" />
-          <label class="modal-form-label-check">I accept the terms and conditions of the
-            <a href="">
-              <span class="privacy-policy">Privacy Policy</span>
-            </a>
-          </label>
-        </div>
-      </form>
-      <button type="button" class="overlay-btn">Send</button>
-    </div>
-  </div>
+
   <!--Підвал сторінки.Логотип,текст,посилання на соц мережі.-->
   <footer class="footer">
     <div class="container footer-info">
@@ -426,8 +378,8 @@
       <div class="footer-subscribe">
         <p class="footer-txt subscribe">Subscribe</p>
         <form class="footer-form">
-          <label class="footer-form-label visually-hidden" for="user-email">Subscribe</label>
-          <input type="email" name="email" placeholder="E-mail" class="footer-form-input" id="user-email" required />
+          <label class="footer-form-label visually-hidden" for="user-email">Subscribe<input type="email" name="email"
+              placeholder="E-mail" class="footer-form-input" id="user-email" required /></label>
           <button class="footer-form-btn" type="submit">Subscribe<svg class="footer-subscribe-icon" width="24"
               height="24">
               <use href="./images/icons.svg#icon-icon-send"></use>
@@ -437,6 +389,59 @@
       </div>
     </div>
   </footer>
+  <!--Overlay з Модальним вікном-->
+  <div class="modal-overlay">
+    <div class="modal">
+      <button type="button" class="close-modal-btn"><svg class="close-modal-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-Close"></use>
+        </svg></button>
+      <p class="modal-txt">Leave your contacts and we will call you back</p>
+      <form class="modal-form">
+        <div class="modal-field">
+          <label class="modal-form-label" for="user-name">Name</label>
+          <div class="input-box">
+            <input type="text" name="user-name" id="user-name" class="form-input" />
+            <svg class="input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-Person"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-form-label" for="user-tel">Phone</label>
+          <div class="input-box">
+            <input type="tel" name="user-tel" id="user-tel" class="form-input" />
+            <svg class="input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-Phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-form-label" for="user-email">Email</label>
+          <div class="input-box">
+            <input type="email" name="user-email" id="user-email" class="form-input" /><svg class="input-icon"
+              width="18" height="24">
+              <use href="./images/icons.svg#icon-Email"></use>
+            </svg>
+          </div>
+        </div>
+        <div class=" modal-field modal-field-comment">
+          <label class="modal-form-label" for="user-comment">Comment</label>
+          <textarea name="user-comment" rows="8" id="user-comment" class="comment" placeholder="Text input"></textarea>
+        </div>
+        <div class="modal-field-checkbox">
+          <input type="checkbox" id="user-privacy" value="true" name="user-privacy" visually-hidden class="checkbox" />
+          <label class="modal-form-label-check" for="user-privacy"><span class="privacy-policy"><svg width="10"
+                height="8" class="checkbox-icon">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg></span>I
+            accept the
+            terms and conditions of the <a href="" class="checkbox-link">Privacy Policy</a>
+          </label>
+        </div>
+        <button type="button" class="overlay-btn">Send</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
