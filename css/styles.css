@@ -520,10 +520,6 @@ ol {
 }
 
 .modal-form {
-  width: 100%;
-  margin-top: 16px;
-  margin-bottom: 24px;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   row-gap: 8px;
@@ -575,6 +571,7 @@ input:focus+svg {
 }
 
 .comment {
+  display: block;
   resize: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -788,7 +785,6 @@ input:focus+svg {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
   border-radius: 4px;
   padding: 8px 24px;
   min-width: 165px;
@@ -800,6 +796,7 @@ input:focus+svg {
   letter-spacing: 0.04em;
   cursor: pointer;
   border: none;
+  fill: #fff;
 }
 
 .footer-subscribe-icon {
